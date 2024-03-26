@@ -13,8 +13,7 @@ size_t binary_tree_size(const binary_tree_t *tree)
 	if (tree == NULL)
 		return (0);
 
-	/* Recursively calculate the size of left and right subtrees,
-	* and add one for the current node */
+	/* Rcsv calculate left and right subtree sizes, add one for current node */
 	return (binary_tree_size(tree->left) + binary_tree_size(tree->right) + 1);
 }
 
